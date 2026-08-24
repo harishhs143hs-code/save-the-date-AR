@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ta" id="htmlRoot">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arunkumar & Vishali – Wedding 31 August 2026</title>
+  <meta name="description" content="Wedding of Y. Arunkumar & S. Vishali – Monday, 31st August 2026, Chennai"/>
+  <meta property="og:title" content="Arunkumar & Vishali – Save the Date"/>
+  <meta property="og:description" content="31st August 2026 • Chennai"/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Tamil:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══ OPENING ANIMATION OVERLAY — "SAVE THE DATE" ═══ -->
+<div class="intro-overlay" id="introOverlay">
+  <div class="intro-content">
+    <div class="intro-symbol">ॐ</div>
+    <div class="intro-blessing">அருள்மிகு பாலமுருகன் துணை</div>
+    <div class="intro-line"></div>
+    <div class="intro-save">Save the Date</div>
+    <div class="intro-names">
+      <span class="intro-name-a">Arunkumar</span>
+      <span class="intro-amp">&amp;</span>
+      <span class="intro-name-d">Vishali</span>
+    </div>
+    <div class="intro-date">31 · 08 · 2026</div>
+    <div class="intro-skip" onclick="skipIntro()">Tap to enter →</div>
+  </div>
+  <div class="intro-petals" id="introPetals"></div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="nav">
+  <div class="nav__brand">
+    <img src="images/ar-logo.png" alt="AR Portraits" class="nav__logo-img"/>
+  </div>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#home" data-ta="முகப்பு" data-en="Home">Home</a></li>
+    <li><a href="#video" data-ta="வீடியோ" data-en="Video">Video</a></li>
+    <li><a href="#invitation" data-ta="அழைப்பிதழ்" data-en="Invitation">Invitation</a></li>
+    <li><a href="#family" data-ta="குடும்பம்" data-en="Family">Family</a></li>
+    <li><a href="#gallery" data-ta="படங்கள்" data-en="Gallery">Gallery</a></li>
+    <li><a href="#venue" data-ta="இடம்" data-en="Venue">Venue</a></li>
+  </ul>
+  <div class="nav__right">
+    <button class="lang-toggle" id="langToggle" onclick="toggleLang()" title="Switch Language">
+      <span class="lang-toggle__en" id="langEN">EN</span>
+      <span class="lang-toggle__sep">|</span>
+      <span class="lang-toggle__ta" id="langTA">த</span>
+    </button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__close" onclick="closeMobileNav()">✕</div>
+  <ul>
+    <li><a href="#home" onclick="closeMobileNav()" data-ta="முகப்பு" data-en="Home">Home</a></li>
+    <li><a href="#video" onclick="closeMobileNav()" data-ta="வீடியோ" data-en="Video">Video</a></li>
+    <li><a href="#invitation" onclick="closeMobileNav()" data-ta="அழைப்பிதழ்" data-en="Invitation">Invitation</a></li>
+    <li><a href="#family" onclick="closeMobileNav()" data-ta="குடும்பம்" data-en="Family">Family</a></li>
+    <li><a href="#gallery" onclick="closeMobileNav()" data-ta="படங்கள்" data-en="Gallery">Gallery</a></li>
+    <li><a href="#venue" onclick="closeMobileNav()" data-ta="இடம்" data-en="Venue">Venue</a></li>
+  </ul>
+  <div class="mobile-nav__footer">
+    <p>31 August 2026</p>
+    <p>Chennai</p>
+    <button class="lang-toggle lang-toggle--mobile" onclick="toggleLang(); closeMobileNav()">
+      Switch to Tamil / English
+    </button>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="home">
+  <div class="hero__bg"></div>
+  <canvas class="hero__particles" id="particlesCanvas"></canvas>
+  <div class="hero__mandala" aria-hidden="true">
+    <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="200" cy="200" r="180" stroke="rgba(198,160,80,0.12)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="150" stroke="rgba(198,160,80,0.18)" stroke-width="0.8"/>
+      <circle cx="200" cy="200" r="120" stroke="rgba(198,160,80,0.14)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="90" stroke="rgba(198,160,80,0.2)" stroke-width="0.8"/>
+      <g opacity="0.15">
+        <ellipse cx="200" cy="80" rx="12" ry="30" fill="#C6A050"/>
+        <ellipse cx="200" cy="320" rx="12" ry="30" fill="#C6A050"/>
+        <ellipse cx="80" cy="200" rx="30" ry="12" fill="#C6A050"/>
+        <ellipse cx="320" cy="200" rx="30" ry="12" fill="#C6A050"/>
+        <ellipse cx="113" cy="113" rx="12" ry="30" fill="#C6A050" transform="rotate(45 113 113)"/>
+        <ellipse cx="287" cy="113" rx="12" ry="30" fill="#C6A050" transform="rotate(-45 287 113)"/>
+        <ellipse cx="113" cy="287" rx="12" ry="30" fill="#C6A050" transform="rotate(-45 113 287)"/>
+        <ellipse cx="287" cy="287" rx="12" ry="30" fill="#C6A050" transform="rotate(45 287 287)"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero__content">
+    <div class="hero__blessing fade-in-up" data-delay="0">
+      <div class="blessing-om">ஸ்ரீ</div>
+      <p class="blessing-txt" data-ta="அருள்மிகு பாலமுருகன் துணை" data-en="With the Blessings of Sri Balamurugan">அருள்மிகு பாலமுருகன் துணை</p>
+    </div>
+
+    <p class="hero__eyebrow fade-in-up" data-delay="1">
+      <span class="eyebrow-line"></span>
+      <span data-ta="திருமண அழைப்பிதழ்" data-en="Save the Date">Save the Date</span>
+      <span class="eyebrow-line"></span>
+    </p>
+
+    <div class="hero__names fade-in-up" data-delay="2">
+      <div class="hero__name-row">
+        <h1 class="hero__name hero__name--groom" data-ta="அருண்குமார்" data-en="Arunkumar">Arunkumar</h1>
+      </div>
+      <div class="hero__amp-wrap">
+        <svg viewBox="0 0 60 70" class="amp-svg">
+          <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle"
+            font-family="Playfair Display" font-size="56" fill="url(#ag)" font-style="italic">&amp;</text>
+          <defs>
+            <linearGradient id="ag" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#C6A050"/>
+              <stop offset="100%" stop-color="#E8C87A"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="hero__name-row">
+        <h1 class="hero__name hero__name--bride" data-ta="விஷாலி" data-en="Vishali">Vishali</h1>
+      </div>
+    </div>
+
+    <div class="hero__date-pill fade-in-up" data-delay="3">
+      <div class="date-pill__inner">
+        <div class="date-pill__col">
+          <span class="dpill-label" data-ta="நாள்" data-en="Day">Day</span>
+          <span class="dpill-val" data-ta="திங்கள்" data-en="Monday">Monday</span>
+        </div>
+        <div class="date-pill__divider"></div>
+        <div class="date-pill__col date-pill__col--main">
+          <span class="dpill-num">31</span>
+          <span class="dpill-month" data-ta="ஆகஸ்ட் 2026" data-en="August 2026">August 2026</span>
+        </div>
+        <div class="date-pill__divider"></div>
+        <div class="date-pill__col">
+          <span class="dpill-label" data-ta="நேரம்" data-en="Time">Time</span>
+          <span class="dpill-val">9:00 AM</span>
+        </div>
+      </div>
+      <div class="date-pill__venue">
+        <svg viewBox="0 0 14 14" fill="none" width="12"><path d="M7 1C4.79 1 3 2.79 3 5c0 3.31 4 8 4 8s4-4.69 4-8c0-2.21-1.79-4-4-4zm0 5.5A1.5 1.5 0 115.5 5 1.5 1.5 0 017 6.5z" fill="rgba(198,160,80,0.9)"/></svg>
+        <span data-ta="ஸ்ரீ பாலமுருகன் திருக்கோயில், சென்னை-81" data-en="Sri Balamurugan Thirukoyil, Chennai-81">Sri Balamurugan Thirukoyil, Chennai-81</span>
+      </div>
+    </div>
+
+    <div class="hero__muhurtham fade-in-up" data-delay="4">
+      <span class="muhurtham-badge" data-ta="முகூர்த்தம்" data-en="Muhurtham">Muhurtham</span>
+      <span class="muhurtham-time">9:00 AM – 10:30 AM</span>
+    </div>
+
+    <div class="hero__cta fade-in-up" data-delay="5">
+      <a href="#invitation" class="btn btn--gold">
+        <span data-ta="அழைப்பிதழ் காண்க" data-en="View Invitation">View Invitation</span>
+      </a>
+      <button class="btn btn--ghost" onclick="shareOnWhatsApp()">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9 9 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span data-ta="பகிர்" data-en="Share">Share</span>
+      </button>
+    </div>
+  </div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+</section>
+
+<!-- ═══ COUNTDOWN ═══ -->
+<section class="countdown-section">
+  <div class="container">
+    <p class="section-eyebrow" id="cdEyebrow" data-ta="மங்கல நாளுக்கான தினங்கள்" data-en="Counting Down to the Big Day">Counting Down to the Big Day</p>
+    <div class="countdown">
+      <div class="countdown__unit"><span class="cd-num" id="days">00</span><span class="cd-lbl" data-ta="நாட்கள்" data-en="Days">Days</span></div>
+      <div class="countdown__dot">:</div>
+      <div class="countdown__unit"><span class="cd-num" id="hours">00</span><span class="cd-lbl" data-ta="மணிநேரம்" data-en="Hours">Hours</span></div>
+      <div class="countdown__dot">:</div>
+      <div class="countdown__unit"><span class="cd-num" id="minutes">00</span><span class="cd-lbl" data-ta="நிமிடம்" data-en="Minutes">Minutes</span></div>
+      <div class="countdown__dot">:</div>
+      <div class="countdown__unit"><span class="cd-num" id="seconds">00</span><span class="cd-lbl" data-ta="விநாடி" data-en="Seconds">Seconds</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VIDEO SECTION — pre-wedding shoot, autoplays when you drop the file in ═══ -->
+<section class="video-section" id="video">
+  <div class="container">
+    <p class="section-eyebrow" data-ta="முன்-திருமண படப்பிடிப்பு" data-en="Pre-Wedding Film">Pre-Wedding Film</p>
+    <h2 class="section-title" data-ta="நம் கதை" data-en="Our Story">Our Story</h2>
+  </div>
+  <div class="video-wrapper">
+    <div class="video-placeholder" id="videoPlaceholder">
+      <!-- STEP TO ADD YOUR VIDEO:
+           1. Put your file at video/prewedding.mp4
+           2. Uncomment the <source> line below
+           It will then autoplay (muted) as soon as the page loads. -->
+      <video id="heroVideo" autoplay muted loop playsinline poster="">
+        <!-- <source src="video/prewedding.mp4" type="video/mp4"> -->
+      </video>
+      <div class="video-overlay">
+        <div class="video-overlay__icon">
+          <svg viewBox="0 0 60 60" fill="none" width="60">
+            <circle cx="30" cy="30" r="28" stroke="rgba(198,160,80,0.6)" stroke-width="1.5"/>
+            <polygon points="24,20 44,30 24,40" fill="rgba(198,160,80,0.8)"/>
+          </svg>
+        </div>
+        <p class="video-overlay__text" data-ta="வீடியோ விரைவில் வரும்…" data-en="Pre-wedding video coming soon…">Pre-wedding video coming soon…</p>
+        <p class="video-overlay__sub" data-ta="வீடியோ கோப்பை video/prewedding.mp4 இல் சேர்க்கவும்" data-en="Add your video file to video/prewedding.mp4">Add your video file to <code>video/prewedding.mp4</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INVITATION ═══ -->
+<section class="invitation" id="invitation">
+  <div class="container">
+    <div class="invitation__card reveal">
+
+      <!-- Tamil Version -->
+      <div class="inv-lang" id="invTamil">
+        <div class="inv-ornament">
+          <svg viewBox="0 0 320 16" fill="none"><line x1="0" y1="8" x2="130" y2="8" stroke="rgba(198,160,80,0.4)" stroke-width="0.8"/><circle cx="160" cy="8" r="5" stroke="#C6A050" stroke-width="1" fill="none"/><circle cx="160" cy="8" r="2.5" fill="rgba(198,160,80,0.5)"/><circle cx="146" cy="8" r="3" stroke="#C6A050" stroke-width="0.8" fill="none"/><circle cx="174" cy="8" r="3" stroke="#C6A050" stroke-width="0.8" fill="none"/><line x1="190" y1="8" x2="320" y2="8" stroke="rgba(198,160,80,0.4)" stroke-width="0.8"/></svg>
+        </div>
+        <div class="blessing-om inv-om">ஸ்ரீ</div>
+        <p class="inv-salutation">அன்புடையீர் வணக்கம்!</p>
+        <p class="inv-body">
+          நிகழும் மங்களகரமான பராபவ வருஷம் ஆவணி மாதம் <strong>14-ந் தேதி (31-8-2026) திங்கள்கிழமை</strong>, திரிதியை திதி, ரேவதி நட்சத்திரம், சித்தயோகம் கூடிய சுப தினத்தில்
+        </p>
+        <div class="inv-date-box">
+          <p><strong>31-8-2026 (திங்கள்கிழமை)</strong></p>
+          <p>காலை <strong>9.00 மணிக்கு மேல் 10.30 மணிக்குள்</strong> உள்ள சுபவேளையில்</p>
+        </div>
+
+        <div class="couple-grid">
+          <!-- Groom side -->
+          <div class="couple-block">
+            <p class="couple-parents">
+              சென்னை-13, புதுமனைக்குப்பத்தில் வசிக்கும்<br/>
+              திரு. T.சுந்தரமூர்த்தி-S.சரஸ்வதி அவர்களின் மகன்வழி பேரனும்,<br/>
+              தெய்வத்திரு. M.ராஜி-R.பார்வதி அவர்களின் மகள்வழி பேரனும்,<br/>
+              திரு. A.யாதவன்-Y.செல்வி அவர்களின் இளைய குமாரன்<br/>
+              <strong>(Y.S. Air Conditioner Owner)</strong>
+            </p>
+            <h2 class="couple-name groom-name">திருநிறைச்செல்வன் : Y. அருண்குமார்</h2>
+          </div>
+
+          <!-- Heart -->
+          <div class="couple-heart">
+            <svg viewBox="0 0 50 46" fill="none">
+              <path d="M25 43C5 28 0 16 0 11 0 4 8 0 15 3c4 2 7 5 10 9 3-4 6-7 10-9 7-3 15 1 15 8 0 5-5 17-25 32z" fill="#C6A050" opacity="0.7"/>
+            </svg>
+          </div>
+
+          <!-- Bride side -->
+          <div class="couple-block">
+            <p class="couple-parents">
+              சென்னை-13, புதுமனைக்குப்பத்தில் வசிக்கும்<br/>
+              தெய்வத்திரு. D.ஜெயராமன்-J.ஜெயலட்சுமி அவர்களின் மகன்வழி பேத்தியும்,<br/>
+              திரு. K.ஆறுமுகம்-தெய்வத்திருமதி. A.விஜயா அவர்களின் மகள்வழிப் பேத்தியும்,<br/>
+              திரு. J.சதிஷ்-S.மோகனா அவர்களின் மூத்த மகளுமான
+            </p>
+            <h2 class="couple-name bride-name">திருநிறைச்செல்வி : S. விஷாலி B.Com.</h2>
+          </div>
+        </div>
+
+        <p class="inv-venue-txt">
+          இவர்களின் திருமணம் பெரியோர்களால் நிச்சயிக்கப்பட்டு,<br/>
+          <strong>அருள்மிகு ஸ்ரீ பாலமுருகன் திருக்கோயில் (N-4)</strong>,<br/>
+          புதுவண்ணாரப்பேட்டை, அரசு மீனவர் காலனி, சென்னை-81 இல் காலை நடைபெறும் திருமணச் சடங்கிற்கும்,<br/>
+          அன்று மாலை <strong>6.30 மணிக்கு மேல்</strong> சென்னை-13, கல்மண்டபம், சூரிய நாராயண தியேட்டர் அருகில் உள்ள<br/>
+          <strong>ஸ்ரீ பேலஸ் திருமண மாளிகை (A/C)</strong> இல் நடைபெறும் திருமண வரவேற்பு நிகழ்ச்சிக்கும்<br/>
+          தங்களையும் தங்கள் குடும்பத்தினரையும் அன்புடன் அழைக்கிறோம்.
+        </p>
+
+        <p class="inv-closing">அன்புடன் அழைக்கின்றோம்</p>
+
+        <div class="inv-signatories">
+          <div class="signatory">
+            <strong>A. யாதவன் – Y. செல்வி</strong>
+            <em>மணமகன் தாய் தந்தையர்</em>
+          </div>
+          <div class="sig-divider"></div>
+          <div class="signatory">
+            <strong>J. சதிஷ் – S. மோகனா</strong>
+            <em>மணமகள் தாய் தந்தையர்</em>
+          </div>
+        </div>
+
+        <div class="inv-signatories" style="margin-top:12px">
+          <div class="signatory">
+            <strong>Y. கார்த்திக் B.Com. – K. மகாலட்சுமி B.Com.</strong>
+            <em>மணமகன் அண்ணன் – அண்ணி</em>
+          </div>
+          <div class="sig-divider"></div>
+          <div class="signatory">
+            <strong>A. குமரன் (TNEB) – K. கவிதா B.Sc.</strong>
+            <em>மணமகள் தாய்மாமன்</em>
+          </div>
+        </div>
+
+        <div class="inv-also">
+          <p><strong>வாழ்த்துபவர்கள்:</strong> J.சங்கர்-S.பிரேமா, J.மோகன்-M.லட்சுமி, J.மணிவண்ணன்-M.காஞ்சனா, J.மாறன்-M.நிர்மலா — புதுமனைக்குப்பம்</p>
+          <p><strong>பிள்ளைக்கு தங்கை:</strong> M. ஹேமாவதி B.Sc., DMLT – R. மணிகண்டன் B.A.</p>
+        </div>
+
+        <p style="font-family:var(--font-tamil); font-size:0.72rem; color:var(--text-light); text-align:center; margin-top:10px;">
+          சில உறவினர்களின் விவரங்கள் அழைப்பிதழில் தெளிவாக இல்லாததால் இங்கு சேர்க்கப்படவில்லை — தேவைப்பட்டால் அனுப்பி வையுங்கள், சேர்த்துக்கொள்கிறேன்.
+        </p>
+
+        <div class="inv-phones">
+          <a href="tel:9840000000" class="phone-link">
+            <svg viewBox="0 0 20 20" fill="none" width="13"><path d="M3 4h4l1.5 4-2 1.5a11 11 0 004 4L12 11.5l4 1.5v4a1 1 0 01-1 1C6.5 18 2 13.5 2 5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5"/></svg>
+            மணமகன் குடும்பம்
+          </a>
+          <a href="tel:9840000001" class="phone-link">
+            <svg viewBox="0 0 20 20" fill="none" width="13"><path d="M3 4h4l1.5 4-2 1.5a11 11 0 004 4L12 11.5l4 1.5v4a1 1 0 01-1 1C6.5 18 2 13.5 2 5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5"/></svg>
+            மணமகள் குடும்பம்
+          </a>
+        </div>
+
+        <div class="inv-ornament">
+          <svg viewBox="0 0 320 16" fill="none"><line x1="0" y1="8" x2="130" y2="8" stroke="rgba(198,160,80,0.4)" stroke-width="0.8"/><circle cx="160" cy="8" r="5" stroke="#C6A050" stroke-width="1" fill="none"/><circle cx="160" cy="8" r="2.5" fill="rgba(198,160,80,0.5)"/><circle cx="146" cy="8" r="3" stroke="#C6A050" stroke-width="0.8" fill="none"/><circle cx="174" cy="8" r="3" stroke="#C6A050" stroke-width="0.8" fill="none"/><line x1="190" y1="8" x2="320" y2="8" stroke="rgba(198,160,80,0.4)" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+
+      <!-- English Version -->
+      <div class="inv-lang hidden" id="invEnglish">
+        <div class="inv-ornament">
+          <svg viewBox="0 0 320 16" fill="none"><line x1="0" y1="8" x2="130" y2="8" stroke="rgba(198,160,80,0.4)" stroke-width="0.8"/><circle cx="160" cy="8" r="5" stroke="#C6A050" stroke-width="1" fill="none"/><circle cx="160" cy="8" r="2.5" fill="rgba(198,160,80,0.5)"/><circle cx="146" cy="8" r="3" stroke="#C6A050" stroke-width="0.8" fill="none"/><circle cx="174" cy="8" r="3" stroke="#C6A050" stroke-width="0.8" fill="none"/><line x1="190" y1="8" x2="320" y2="8" stroke="rgba(198,160,80,0.4)" stroke-width="0.8"/></svg>
+        </div>
+        <div class="blessing-om inv-om">ஸ்ரீ</div>
+        <p class="inv-salutation">Dear Friends & Family,</p>
+        <p class="inv-body">
+          With the blessings of the Almighty, we joyfully invite you to celebrate the auspicious wedding of
+        </p>
+        <div class="inv-date-box">
+          <p><strong>Monday, 31st August 2026</strong></p>
+          <p>Muhurtham: <strong>9:00 AM – 10:30 AM</strong></p>
+        </div>
+        <div class="couple-grid">
+          <div class="couple-block">
+            <p class="couple-parents">
+              Son of <strong>Mr. A. Yadhavan & Mrs. Y. Selvi</strong><br/>
+              Grandson of <strong>Mr. T. Sundaramurthy & Mrs. S. Saraswathi</strong><br/>
+              and of <strong>Mr. M. Raji & Mrs. R. Parvathi</strong><br/>
+              (Y.S. Air Conditioner Owner)
+            </p>
+            <h2 class="couple-name groom-name">Y. Arunkumar</h2>
+          </div>
+          <div class="couple-heart">
+            <svg viewBox="0 0 50 46" fill="none">
+              <path d="M25 43C5 28 0 16 0 11 0 4 8 0 15 3c4 2 7 5 10 9 3-4 6-7 10-9 7-3 15 1 15 8 0 5-5 17-25 32z" fill="#C6A050" opacity="0.7"/>
+            </svg>
+          </div>
+          <div class="couple-block">
+            <p class="couple-parents">
+              Eldest daughter of <strong>Mr. J. Sathish & Mrs. S. Mohana</strong><br/>
+              Granddaughter of <strong>Mr. D. Jeyaraman & Mrs. J. Jeyalakshmi</strong><br/>
+              and of <strong>Mr. K. Arumugam & Mrs. A. Vijaya</strong>
+            </p>
+            <h2 class="couple-name bride-name">S. Vishali B.Com.</h2>
+          </div>
+        </div>
+        <p class="inv-venue-txt">
+          Wedding ceremony at<br/>
+          <strong>Arulmigu Sri Balamurugan Thirukoyil (N-4)</strong>, Puduvannarapettai, Chennai-81<br/>
+          Reception from <strong>6:30 PM</strong> at <strong>Sri Palace Thirumana Maaligai (A/C)</strong>, Kalmandapam, Chennai-13<br/>
+          We warmly invite you and your family to grace this occasion.
+        </p>
+        <p class="inv-closing">With love & warmth,</p>
+        <div class="inv-signatories">
+          <div class="signatory">
+            <strong>A. Yadhavan & Y. Selvi</strong>
+            <em>Parents of the Groom</em>
+          </div>
+          <div class="sig-divider"></div>
+          <div class="signatory">
+            <strong>J. Sathish & S. Mohana</strong>
+            <em>Parents of the Bride</em>
+          </div>
+        </div>
+        <div class="inv-ornament">
+          <svg viewBox="0 0 320 16" fill="none"><line x1="0" y1="8" x2="130" y2="8" stroke="rgba(198,160,80,0.4)" stroke-width="0.8"/><circle cx="160" cy="8" r="5" stroke="#C6A050" stroke-width="1" fill="none"/><circle cx="160" cy="8" r="2.5" fill="rgba(198,160,80,0.5)"/><circle cx="146" cy="8" r="3" stroke="#C6A050" stroke-width="0.8" fill="none"/><circle cx="174" cy="8" r="3" stroke="#C6A050" stroke-width="0.8" fill="none"/><line x1="190" y1="8" x2="320" y2="8" stroke="rgba(198,160,80,0.4)" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAMILY ═══ -->
+<section class="family" id="family">
+  <div class="container">
+    <p class="section-eyebrow" data-ta="ஆசிர்வாதத்துடன்" data-en="With the Blessings of">With the Blessings of</p>
+    <h2 class="section-title" data-ta="எங்கள் குடும்பம்" data-en="Our Families">Our Families</h2>
+    <div class="family__grid">
+
+      <!-- Groom family -->
+      <div class="family-card reveal">
+        <div class="fcard-badge groom-badge" data-ta="மணமகன் குடும்பம்" data-en="Groom's Family">Groom's Family</div>
+        <h3 class="fcard-title" data-ta="அருண்குமார் குடும்பம்" data-en="Arunkumar's Family">Arunkumar's Family</h3>
+        <p class="fcard-loc">Puduvannarapettai, Chennai</p>
+        <div class="family-members">
+          <div class="family-member">
+            <span class="member-role" data-ta="தந்தை – தாய்" data-en="Father – Mother">Father – Mother</span>
+            <span class="member-name" data-ta="திரு. A. யாதவன் & திருமதி. Y. செல்வி" data-en="Mr. A. Yadhavan & Mrs. Y. Selvi">திரு. A. யாதவன் & திருமதி. Y. செல்வி</span>
+          </div>
+          <div class="family-member">
+            <span class="member-role" data-ta="தாத்தா – பாட்டி (தந்தை வழி)" data-en="Grandfather – Grandmother (paternal)">Grandparents (paternal)</span>
+            <span class="member-name" data-ta="திரு. T. சுந்தரமூர்த்தி & திருமதி. S. சரஸ்வதி" data-en="Mr. T. Sundaramurthy & Mrs. S. Saraswathi">திரு. T. சுந்தரமூர்த்தி & திருமதி. S. சரஸ்வதி</span>
+          </div>
+          <div class="family-member">
+            <span class="member-role" data-ta="தாத்தா – பாட்டி (தாய் வழி)" data-en="Grandfather – Grandmother (maternal)">Grandparents (maternal)</span>
+            <span class="member-name" data-ta="திரு. M. ராஜி & திருமதி. R. பார்வதி" data-en="Mr. M. Raji & Mrs. R. Parvathi">திரு. M. ராஜி & திருமதி. R. பார்வதி</span>
+          </div>
+          <div class="family-member">
+            <span class="member-role" data-ta="அண்ணன் – அண்ணி" data-en="Brother – Sister-in-law">Brother – Sister-in-law</span>
+            <span class="member-name" data-ta="Y. கார்த்திக் B.Com. & K. மகாலட்சுமி B.Com." data-en="Y. Karthik B.Com. & K. Mahalakshmi B.Com.">Y. கார்த்திக் B.Com. & K. மகாலட்சுமி B.Com.</span>
+          </div>
+          <div class="family-member">
+            <span class="member-role" data-ta="தங்கை" data-en="Sister">Sister</span>
+            <span class="member-name" data-ta="M. ஹேமாவதி B.Sc., DMLT & R. மணிகண்டன் B.A." data-en="M. Hemavathi B.Sc., DMLT & R. Manikandan B.A.">M. ஹேமாவதி B.Sc., DMLT & R. மணிகண்டன் B.A.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center -->
+      <div class="family-emblem reveal">
+        <div class="emblem-ring outer"><div class="emblem-ring inner"><div class="emblem-core"><span class="emblem-sym">ஸ்ரீ</span></div></div></div>
+        <p class="emblem-lbl" data-ta="புனிதமான ஒன்றிணைவு" data-en="A Sacred Union">A Sacred Union</p>
+      </div>
+
+      <!-- Bride family -->
+      <div class="family-card reveal">
+        <div class="fcard-badge bride-badge" data-ta="மணமகள் குடும்பம்" data-en="Bride's Family">Bride's Family</div>
+        <h3 class="fcard-title" data-ta="விஷாலி குடும்பம்" data-en="Vishali's Family">Vishali's Family</h3>
+        <p class="fcard-loc">Puduvannarapettai, Chennai</p>
+        <div class="family-members">
+          <div class="family-member">
+            <span class="member-role" data-ta="தந்தை – தாய்" data-en="Father – Mother">Father – Mother</span>
+            <span class="member-name" data-ta="திரு. J. சதிஷ் & திருமதி. S. மோகனா" data-en="Mr. J. Sathish & Mrs. S. Mohana">திரு. J. சதிஷ் & திருமதி. S. மோகனா</span>
+          </div>
+          <div class="family-member">
+            <span class="member-role" data-ta="பாட்டனார் – பாட்டி (தந்தை வழி)" data-en="Grandparents (paternal)">Grandparents (paternal)</span>
+            <span class="member-name" data-ta="தெய்வத்திரு. D. ஜெயராமன் & J. ஜெயலட்சுமி" data-en="Mr. D. Jeyaraman & Mrs. J. Jeyalakshmi">தெய்வத்திரு. D. ஜெயராமன் & J. ஜெயலட்சுமி</span>
+          </div>
+          <div class="family-member">
+            <span class="member-role" data-ta="பாட்டனார் – பாட்டி (தாய் வழி)" data-en="Grandparents (maternal)">Grandparents (maternal)</span>
+            <span class="member-name" data-ta="திரு. K. ஆறுமுகம் & திருமதி. A. விஜயா" data-en="Mr. K. Arumugam & Mrs. A. Vijaya">திரு. K. ஆறுமுகம் & திருமதி. A. விஜயா</span>
+          </div>
+          <div class="family-member">
+            <span class="member-role" data-ta="தாய் மாமன்" data-en="Maternal Uncle">Maternal Uncle</span>
+            <span class="member-name" data-ta="A. குமரன் (TNEB) & K. கவிதா B.Sc." data-en="A. Kumaran (TNEB) & K. Kavitha B.Sc.">A. குமரன் (TNEB) & K. கவிதா B.Sc.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <p class="section-eyebrow" data-ta="நினைவுகள்" data-en="Memories Together">Memories Together</p>
+    <h2 class="section-title" data-ta="படங்கள்" data-en="Photo Gallery">Photo Gallery</h2>
+    <p class="gallery__hint" data-ta="புகைப்படங்கள் விரைவில்…" data-en="Photos coming soon — add your images to the images/ folder">Photos coming soon — add your images to the <code>images/</code> folder</p>
+    <div class="gallery__grid">
+      <div class="gallery__item reveal" onclick="openLightbox(0)"><img src="images/gallery-1.jpg" alt="Photo 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="img-ph"><svg viewBox="0 0 40 40" fill="none" width="28"><rect x="4" y="8" width="32" height="24" rx="3" stroke="#C6A050" stroke-width="1.5"/><circle cx="14" cy="16" r="3" stroke="#C6A050" stroke-width="1.5"/><path d="M4 26l8-6 6 5 5-4 13 11" stroke="#C6A050" stroke-width="1.5"/></svg></div><div class="gallery__overlay"><span>View</span></div></div>
+      <div class="gallery__item reveal" onclick="openLightbox(1)"><img src="images/gallery-2.jpg" alt="Photo 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="img-ph"><svg viewBox="0 0 40 40" fill="none" width="28"><rect x="4" y="8" width="32" height="24" rx="3" stroke="#C6A050" stroke-width="1.5"/><circle cx="14" cy="16" r="3" stroke="#C6A050" stroke-width="1.5"/><path d="M4 26l8-6 6 5 5-4 13 11" stroke="#C6A050" stroke-width="1.5"/></svg></div><div class="gallery__overlay"><span>View</span></div></div>
+      <div class="gallery__item reveal" onclick="openLightbox(2)"><img src="images/gallery-3.jpg" alt="Photo 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="img-ph"><svg viewBox="0 0 40 40" fill="none" width="28"><rect x="4" y="8" width="32" height="24" rx="3" stroke="#C6A050" stroke-width="1.5"/><circle cx="14" cy="16" r="3" stroke="#C6A050" stroke-width="1.5"/><path d="M4 26l8-6 6 5 5-4 13 11" stroke="#C6A050" stroke-width="1.5"/></svg></div><div class="gallery__overlay"><span>View</span></div></div>
+      <div class="gallery__item reveal" onclick="openLightbox(3)"><img src="images/gallery-4.jpg" alt="Photo 4" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="img-ph"><svg viewBox="0 0 40 40" fill="none" width="28"><rect x="4" y="8" width="32" height="24" rx="3" stroke="#C6A050" stroke-width="1.5"/><circle cx="14" cy="16" r="3" stroke="#C6A050" stroke-width="1.5"/><path d="M4 26l8-6 6 5 5-4 13 11" stroke="#C6A050" stroke-width="1.5"/></svg></div><div class="gallery__overlay"><span>View</span></div></div>
+      <div class="gallery__item reveal" onclick="openLightbox(4)"><img src="images/gallery-5.jpg" alt="Photo 5" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="img-ph"><svg viewBox="0 0 40 40" fill="none" width="28"><rect x="4" y="8" width="32" height="24" rx="3" stroke="#C6A050" stroke-width="1.5"/><circle cx="14" cy="16" r="3" stroke="#C6A050" stroke-width="1.5"/><path d="M4 26l8-6 6 5 5-4 13 11" stroke="#C6A050" stroke-width="1.5"/></svg></div><div class="gallery__overlay"><span>View</span></div></div>
+      <div class="gallery__item reveal" onclick="openLightbox(5)"><img src="images/gallery-6.jpg" alt="Photo 6" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="img-ph"><svg viewBox="0 0 40 40" fill="none" width="28"><rect x="4" y="8" width="32" height="24" rx="3" stroke="#C6A050" stroke-width="1.5"/><circle cx="14" cy="16" r="3" stroke="#C6A050" stroke-width="1.5"/><path d="M4 26l8-6 6 5 5-4 13 11" stroke="#C6A050" stroke-width="1.5"/></svg></div><div class="gallery__overlay"><span>View</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+  <button class="lb-prev" onclick="event.stopPropagation();changeLightbox(-1)">&#8249;</button>
+  <img class="lb-img" id="lbImg" src="" alt=""/>
+  <button class="lb-next" onclick="event.stopPropagation();changeLightbox(1)">&#8250;</button>
+</div>
+
+<!-- ═══ VENUE ═══ -->
+<section class="venue" id="venue">
+  <div class="container">
+    <p class="section-eyebrow" data-ta="இடம் காண்க" data-en="Find Us">Find Us</p>
+    <h2 class="section-title" data-ta="திருமண இடம்" data-en="Wedding Venue">Wedding Venue</h2>
+    <div class="venue__inner">
+      <div class="venue__info reveal">
+        <div class="venue-name-row">
+          <div class="venue-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 4C13 4 7 10 7 17c0 10 13 24 13 24s13-14 13-24c0-7-6-13-13-13z" stroke="#C6A050" stroke-width="1.5" fill="none"/><circle cx="20" cy="17" r="4" stroke="#C6A050" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <div>
+            <h3 class="venue-name" data-ta="அருள்மிகு ஸ்ரீ பாலமுருகன் திருக்கோயில்" data-en="Arulmigu Sri Balamurugan Thirukoyil">Arulmigu Sri Balamurugan Thirukoyil</h3>
+            <p class="venue-sub">(N-4) புதுவண்ணாரப்பேட்டை, சென்னை-81</p>
+          </div>
+        </div>
+        <p class="venue-address" data-ta="அரசு மீனவர் காலனி, புதுவண்ணாரப்பேட்டை, சென்னை – 81" data-en="Govt. Fishermen Colony, Puduvannarapettai, Chennai – 81">Govt. Fishermen Colony, Puduvannarapettai, Chennai – 81</p>
+
+        <div class="event-timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-time">9:00 AM</span>
+              <span class="tl-event" data-ta="விருந்தினர் வரவேற்பு" data-en="Welcome – Guests Arrival">Welcome – Guests Arrival</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot tl-dot--main"></div>
+            <div class="tl-content">
+              <span class="tl-time">9:00 – 10:30 AM</span>
+              <span class="tl-event" data-ta="முகூர்த்தம் – திருமண சடங்கு" data-en="Muhurtham – Wedding Ceremony">Muhurtham – Wedding Ceremony</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-time">6:30 PM</span>
+              <span class="tl-event" data-ta="ஸ்ரீ பேலஸ் திருமண மாளிகை (A/C), கல்மண்டபம், சென்னை-13 இல் வரவேற்பு" data-en="Reception at Sri Palace Thirumana Maaligai (A/C), Kalmandapam, Chennai-13">Reception – Sri Palace Thirumana Maaligai (A/C), Kalmandapam, Chennai-13</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="venue-actions">
+          <a href="https://maps.google.com/?q=Puduvannarapettai+Chennai+81" target="_blank" rel="noopener" class="btn btn--gold">
+            <span data-ta="கூகிள் மேப்பில் திற" data-en="Open in Google Maps">Open in Google Maps</span>
+          </a>
+          <button class="btn btn--outline" onclick="shareOnWhatsApp()">
+            <span data-ta="WhatsApp இல் பகிர்" data-en="Share on WhatsApp">Share on WhatsApp</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="venue__map reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5!2d80.28!3d13.10!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52644f!2sPuduvannarapettai+Chennai!5e0!3m2!1sen!2sin!4v1"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Puduvannarapettai, Chennai-81"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer__glow"></div>
+  <div class="footer__content">
+    <div class="footer-logo-wrap">
+      <img src="images/ar-logo.png" alt="AR Portraits" class="footer-logo-img"/>
+    </div>
+    <div class="footer-names">
+      <span class="fn-a" data-ta="அருண்குமார்" data-en="Arunkumar">Arunkumar</span>
+      <span class="fn-amp">&amp;</span>
+      <span class="fn-d" data-ta="விஷாலி" data-en="Vishali">Vishali</span>
+    </div>
+    <p class="footer-date" data-ta="31 ஆகஸ்ட் 2026 • சென்னை" data-en="31st August 2026 • Chennai">31st August 2026 • Chennai</p>
+    <div class="footer-share">
+      <button class="whatsapp-btn" onclick="shareOnWhatsApp()">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9 9 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span data-ta="அழைப்பை பகிர்" data-en="Share this Invitation">Share this Invitation</span>
+      </button>
+    </div>
+    <div class="footer-divider">
+      <svg viewBox="0 0 200 10" fill="none"><path d="M10 5 Q50 1 100 5 Q150 9 190 5" stroke="rgba(198,160,80,0.3)" stroke-width="1" fill="none"/></svg>
+    </div>
+    <p class="footer-credit">
+      <span data-ta="AR Portraits – Aravind Ravichandran இன் அன்பான படைப்பு" data-en="Crafted with love by AR Portraits – Aravind Ravichandran">Crafted with love by AR Portraits – Aravind Ravichandran</span>
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
